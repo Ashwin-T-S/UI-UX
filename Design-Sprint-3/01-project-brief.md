@@ -1,6 +1,6 @@
 # Sprint 3 Project Brief: Sutra, a Subscription That Has to Be Cancellable
 
-**Weeks 9 to 12 | Track focus: Interaction, Product and Ethics | Cohort: UX1 to UX5**
+**Weeks 9 to 12 | Track focus: Interaction, Product and Ethics | Cohort: UX1 to UX10**
 
 *Sutra is a fictional company. The numbers are invented for this exercise and are consistent across the sprint. Do not quote them outside it.*
 

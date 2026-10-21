@@ -1,6 +1,6 @@
 # Sprint 5: Project Options
 
-**Weeks 17 to 20 | The capstone | Cohort: UX1 to UX5**
+**Weeks 17 to 20 | The capstone | Cohort: UX1 to UX10**
 
 *All clients here are fictional and all numbers are invented for the exercise. Choose one option, or propose your own, and get written approval from the admin before week 17.*
 

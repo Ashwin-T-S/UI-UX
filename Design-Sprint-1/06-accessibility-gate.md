@@ -95,7 +95,7 @@ Every screen in the flow ships every state that applies to it. Missing state mea
 | Rate limited or quota | What when the system says slow down | not designed |
 | Destructive confirm | What before something irreversible | a browser confirm dialog |
 | Session expired | What when the clock ran out | full data loss |
-| Long content | What when the text is 3 times longer, or in Hindi | layout breaks |
+| Long content | What when the text is 3 times longer, or in Malayalam | layout breaks |
 | Truncated | Where text cuts off and how the user reads the rest | ellipsis with no access to the full value |
 
 For this sprint, the states matrix is committed as a table: rows are screens, columns are states, cells link to the Figma frame or say "not applicable" with the reason.

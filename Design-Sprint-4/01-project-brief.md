@@ -1,6 +1,6 @@
 # Sprint 4 Project Brief: Three Products, One Company
 
-**Weeks 13 to 16 | Track focus: Systems | Cohort: UX1 to UX5**
+**Weeks 13 to 16 | Track focus: Systems | Cohort: UX1 to UX10**
 
 ---
 
