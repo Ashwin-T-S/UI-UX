@@ -6,9 +6,18 @@
 
 ## What you are building
 
-You are rebuilding the **Aadhaar address update flow** for a state government digital services unit. One flow, done completely: every screen, every state, working for a 52-year-old shop owner on a cheap Android phone with a connection that drops, and passing a real accessibility check.
+You are rebuilding the **Kerala PSC apply-for-a-post journey**.
+The client is a fictional digital services team inside a state recruitment body.
+This is a fictional client, but a real public service.
+One flow, done fully: every screen and every state.
+It must work on a phone, in Malayalam and English.
+It must pass a real accessibility check.
+It must work for three users.
+An anxious first-time applicant may miss a deadline.
+A repeat applicant uses a cheap Android phone, has patchy data, and reads Malayalam first.
+A low-vision candidate uses TalkBack (a screen reader on Android).
 
-Not a concept. Not three pretty screens. A complete, defensible flow.
+Not a concept. Not three pretty screens. A complete flow you can defend.
 
 ---
 
@@ -50,14 +59,26 @@ BUILD  DO        1 to 2 h    a task built on that day's LEARN reading
 
 Week files give you the exact chapter, the exact page range, the exact video. Never "read about typography".
 
-Every task in this sprint has four parts:
+**How to read a task**
 
-| Part | What it gives you |
+Every task has the same parts, in the same order. Read them from the top.
+
+| Part | What it tells you |
 |---|---|
-| **Learn first** | Which part of that day's LEARN reading this uses |
-| **Method** | Numbered steps. The procedure, not the answer. |
-| **Worked example** | A correct answer for a different case, so you know the shape |
-| **Done when** | The checklist that says you can stop |
+| **What we are doing** | What you will make, in one or two short sentences |
+| **Why we are doing it** | What goes wrong in a real job if you skip it |
+| **Before you start** | What to have ready, and how long it takes |
+| **Where to find help** | The exact page, link or file to look at |
+| **How to think about it** | Questions to ask yourself while you work |
+| **Learn first** | The part of today's reading the task uses |
+| **Method** | The steps, one by one |
+| **Worked example** | A finished answer for a different case, so you see the shape |
+| **Common mistakes** | Mistakes beginners often make, and the quick fix |
+| **Done when** | A checklist. Tick every box, then you can stop |
+
+The last line of a task, the one that starts with an arrow, names the file you commit.
+
+If a task is not clear, do not feel bad. Ask in the cohort channel. It means the task needs fixing.
 
 ---
 
@@ -75,10 +96,10 @@ students/UX{n}/week1/
   ...
 ```
 
-One task, one file, one commit. Commit message starts with the task ID:
+One task, one commit with all files listed for that task. Commit message starts with the task ID:
 
 ```
-git commit -m "C1.1 type scale with Devanagari test"
+git commit -m "C1.1 type scale with Malayalam test"
 ```
 
 ---
@@ -100,7 +121,7 @@ The **system owner** for the week merges contributions. That role rotates.
 - Every error message written
 - A completed accessibility gate with evidence on every line
 - A handoff spec an engineer could build from
-- One decision record for the choice a department official would question
+- One decision record for the choice a client team member would question
 - One post mortem on the mid-sprint failure
 - 20 learning summaries
 - A passed defense
@@ -111,9 +132,9 @@ The **system owner** for the week merges contributions. That role rotates.
 
 ## What will be hard, and it is meant to be
 
-**The brief is deliberately bad.** "Make it so people stop coming to the counter." Week 1 is about turning it into something answerable. If you start designing screens on the first task you will design the wrong thing.
+**The brief is deliberately bad.** "Make applying simple, so we get fewer wrong applications and fewer calls to the office." Week 1 is about turning it into something answerable. If you start designing screens on the first task you will design the wrong thing.
 
-**You cannot invent users.** Three real users are described in the brief, each with a different failure mode. You design for all three, not the easiest one.
+**You cannot invent users.** Three users are described in the brief. One is an anxious first-time applicant. One is a repeat applicant on a cheap Android phone with patchy data and Malayalam first. One is a low-vision candidate using TalkBack. Each has a different failure mode. You design for all three, not the easiest one.
 
 **Something will break in week 3.** A constraint will change. You will not know which one until it lands. You write a post mortem about what it cost you.
 
@@ -128,6 +149,6 @@ The **system owner** for the week merges contributions. That role rotates.
 - [ ] Figma set up, four Learn lessons done (see root `04-Tools-Setup.md`)
 - [ ] axe DevTools installed
 - [ ] Repo forked and cloned
-- [ ] Use the live service at `myaadhaar.uidai.gov.in` once, on your phone, with your own Aadhaar. Do not use anyone else's.
+- [ ] Open https://www.keralapsc.gov.in/ and read the safety rules in `01-project-brief.md` (section 12). Do not register, log in or submit anything.
 
 Then open `02-week1.md`.

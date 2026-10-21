@@ -1,6 +1,6 @@
 # Sprint 2 Project Brief: The Skill Scheme Dropout
 
-**Weeks 5 to 8 | Track focus: Research and Evidence | Cohort: UX1 to UX5**
+**Weeks 5 to 8 | Track focus: Research and Evidence | Cohort: UX1 to UX10**
 
 ---
 

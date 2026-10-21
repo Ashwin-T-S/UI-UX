@@ -1,6 +1,6 @@
 # Students
 
-One folder per designer: `UX1` to `UX5`. No real names anywhere in this repository. Your code is fixed for all 24 weeks.
+One folder per designer: `UX1` to `UX5`. No real names anywhere in this repository. Your code is fixed for all 27 weeks.
 
 ```
 students/UX{n}/
@@ -16,10 +16,10 @@ Each sprint folder has its own `students/`, in the same shape. Week numbers run 
 
 Rules
 
-1. One task, one file, one commit. The commit message starts with the task ID: `C1.1 type scale with Devanagari test`.
+1. One task, one file, one commit. The commit message starts with the task ID: `C1.1 type scale with Malayalam test`.
 2. Work in your own folder. Never edit another designer's folder. Review through pull-request comments.
 3. Anything shared with the cohort goes in `system/`, `delivery/` or `fundamentals/`, with a pull request.
-4. No real Aadhaar numbers, phone numbers, faces, or participant names, ever. Participants are `P1`, `P2`... Redact screenshots before committing.
+4. No real User IDs, phone numbers, dates of birth, photographs, faces or participant names, ever. Participants are `P1`, `P2`... Redact screenshots before committing.
 5. Anything an AI tool touched carries the one-line AI footer (`../../03-Books-And-Resources.md`, section 8).
 
 Templates are in `_templates/`. Copy them, do not edit them.

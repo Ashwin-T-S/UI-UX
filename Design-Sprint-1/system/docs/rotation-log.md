@@ -1,6 +1,6 @@
 # Rotation Log
 
-Filled by the admin before week 1 and updated weekly. Everyone holds each role at least once per sprint (5 designers, 4 weeks, 2 roles).
+Filled by the admin before week 1 and updated weekly. Everyone holds each role at least once per sprint (up to 10 designers: check the rota, 4 weeks may not cover every role).
 
 | Week | Critique lead | System owner | Builders |
 |---|---|---|---|

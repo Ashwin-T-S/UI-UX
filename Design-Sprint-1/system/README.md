@@ -1,6 +1,6 @@
 # The Shared System
 
-One design system, built by five designers. Not five systems. It starts here in Sprint 1 and is handed forward at each sprint release: the next sprint's `system/` begins as a copy of this one (tasks S5, S10, S15, S20), so every shortcut taken in week 2 is still there in week 20.
+One design system, built by the whole cohort. Not five systems. It starts here in Sprint 1 and is handed forward at each sprint release: the next sprint's `system/` begins as a copy of this one (tasks S5, S10, S15, S20), so every shortcut taken in week 2 is still there in week 20.
 
 **Figma library:** to be added by the week 1 system owner
 **Current version:** 0.1.0 pre release

@@ -1,2 +1,5 @@
 .DS_Store
 Thumbs.db
+
+# Private admin material. Lives here until it moves to its own private repository.
+_admin/

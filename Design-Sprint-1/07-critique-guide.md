@@ -31,7 +31,7 @@ Then stop talking and write.
 A valid comment has three parts: the observation, the principle, and the user cost.
 
 **Valid**
-> "The document rule appears after the upload step. That is a mismatch between system and real world order. Ramesh pays ₹50 and waits nine days before learning his bill is not in his name."
+> "Your design shows the photograph rule after the upload button. That is a mismatch between system and real world order. Suresh uploads a photo that will be rejected and only learns the rule after he has submitted."
 
 **Valid**
 > "This input has no disabled state in the system. The payment screen needs one during processing, so someone will build a one off and the system will fork."
@@ -73,7 +73,7 @@ Lead: UX3 | Date: | Present: UX1 UX2 UX3 UX4 UX5
 ## UX1
 Showed: document guidance screen
 Top comments:
-1. Rule appears after upload, mismatch with real world order, costs ₹50 and 9 days (raised by UX4)
+1. Photograph rule appears after upload, mismatch with real world order, risks a rejected photo and a missed deadline (raised by UX4)
 2. Icon button has no accessible name (raised by UX2)
 Actions: 2 accepted, 1 rejected with reason
 Working well: the rejection reason screen turns a code into an action

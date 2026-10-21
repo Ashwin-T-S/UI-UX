@@ -1,6 +1,6 @@
 # Sprint 6 Project Brief: Portfolio, Interview, Market
 
-**Weeks 21 to 24 | Track focus: Communication and getting hired | Cohort: UX1 to UX5**
+**Weeks 21 to 24 | Track focus: Communication and getting hired | Cohort: UX1 to UX10**
 
 ---
 
@@ -92,7 +92,7 @@ There is no sealed scenario in this sprint. The week 22 external review is the i
 At week 24 the program ends. What continues:
 
 - The design system, which the next cohort inherits along with your governance model
-- The fundamentals folders, with 24 weeks of why sessions, teardowns and explainers
+- The fundamentals folders, with 27 weeks of why sessions, teardowns and explainers
 - Your ledger, which is what any reference or placement conversation is built from
 - Follow-ups at 30, 90 and 180 days: applications, interviews, offers, and what you would change
 - The habit, if it took: nothing is done until someone else can build it, and no decision is real until you can defend it to someone who wants it to be wrong

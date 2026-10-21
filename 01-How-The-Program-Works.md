@@ -1,4 +1,4 @@
-# 01 — How The Program Works
+# 01: How The Program Works
 
 Read after `00-START-HERE.md`. This is the operating manual: your week, your roles, what blocks your work from being called done, and how you are assessed.
 
@@ -7,14 +7,15 @@ Read after `00-START-HERE.md`. This is the operating manual: your week, your rol
 ## 1. The shape of everything
 
 ```
-24 weeks
- └── 6 sprints × 4 weeks each
-      └── each sprint: 1 client project, 1 defense at the end
-           └── each week: 5 learn-then-do days + critique + a cohort day (Day 6)
-                └── each task: LEARN block, then DO block
+27 weeks
+ └── week 0 setup, then 6 sprints
+      └── weeks 1 to 24, plus week 12b and week 20b
+           └── each sprint: 1 client project, 1 defense at the end
+                └── each week: 5 learn-then-do days + critique + a cohort day (Day 6)
+                     └── each task: LEARN block, then DO block
 ```
 
-Nothing changes about this rhythm across 24 weeks. Only the content gets harder.
+Nothing changes about this rhythm across 27 weeks. Only the content gets harder.
 
 ---
 
@@ -24,16 +25,16 @@ Two blocks of work per study session, repeated through the week.
 
 ### The LEARN block, 1 to 2 hours
 
-Your week file (`02-week1.md` and so on) names exactly what to read or watch. Chapter numbers. Page ranges. Video titles with durations. Never "read about typography".
+Your week file (`02-week1.md` and so on) names exactly what to read or watch. Chapter numbers. Page ranges. Video titles with durations. Never "read about typography". Week 0, week 12b and week 20b have their own week files.
 
 At the end of the block, write a summary. It is short and it has a fixed shape:
 
 ```markdown
-# Week 1, session 1 — Learning summary
+# Week 1, session 1: Learning summary
 
 ## What I read or watched
 - Refactoring UI, ch. 2 "Hierarchy is Everything"
-- Figma Learn: Auto Layout, 18 min
+- The Week 1 framing resource assigned in your week file.
 
 ## Three things I learned
 1. ...
@@ -47,64 +48,70 @@ At the end of the block, write a summary. It is short and it has a fixed shape:
 ...
 ```
 
-Commit it to `students/UX{n}/week{n}/session{n}-learning.md`. Ten minutes. Not optional.
+Commit it to `Design-Sprint-N/students/UX{n}/weekX/session{n}-learning.md`. Ten minutes. Not optional. Use commit message `weekX-sessionN learning summary`, replacing X and N with your week and session numbers.
 
 ### The DO block, 1 to 2 hours
 
-The task that uses what you just learned. Every task in this program gives you four things:
+The task that uses what you just learned. Every task is written so you can finish it without asking anyone what it means. Each task has these parts, in this order:
 
-| Part | What it means |
+| Part | What it tells you |
 |---|---|
-| **Learn first** | Which part of this week's reading this task is built on |
-| **Method** | The numbered steps. Not the answer, but the procedure. |
-| **Worked example** | What a correct answer looks like, for a different case |
-| **Done when** | The checklist that says you can stop |
+| **What We Are Doing** | In one or two short sentences, what you will make |
+| **Why We Are Doing It** | What goes wrong in a real job if you skip it |
+| **What to Learn First** | Which part of the day's reading the task uses |
+| **Where to Find Resources** | The exact page, link or file to look at |
+| **Step-by-Step Guide** | The numbered steps, one action per step, and what to do if you get stuck |
+| **What to Commit** | The exact path, the "Done when" checks, and the commit message |
+| **How to think about it** | Added to thinking tasks: questions to ask yourself while you work |
+| **Worked example** | Some tasks include a small example from a different case, so you see the shape |
+| **Common mistakes** | Some tasks list mistakes beginners often make, and the quick fix |
 
-If a task ever feels impossible, you skipped the LEARN block. Go back to it.
+If a task is not clear to you, that is a mistake in the task, not in you. Tell the admin so it can be fixed.
+
+If you get stuck, reread the relevant LEARN section. If you are still blocked, post the task ID, the step and what you tried in Discord.
 
 ---
 
 ## 3. Your week
 
 ```
-WEEK OPENS ──────────► WORK ──────────► CRITIQUE ──────► GATE ──────► WEEK CLOSES
-kickoff 15m            learn + do       90 min           check        cohort day
-                       commit as        in-progress      what you     why session
-                       you finish       work shown       call done    + teardown
+WEEK OPENS -> WORK -> CRITIQUE -> GATE -> WEEK CLOSES
+kickoff 15m   learn + do  90 min  check    cohort day
+              commit as   in-progress what you  why session
+              you finish  work shown  call done + teardown
 ```
 
 **Kickoff, 15 minutes.** Admin posts the week goal, names who holds which role, and says which gate applies. You read the week file end to end before you start.
 
 **Work.** Learn, do, commit. Open a pull request as each task finishes, not in one batch at the end.
 
-**Critique, 90 minutes.** Each designer presents in-progress work for 12 minutes. Run against the rubric in the sprint's `07-critique-guide.md`. The critique lead files the log straight after.
+**Critique, 90 minutes.** Each designer presents in-progress work. The critique lead keeps the session to 90 minutes, about 8 minutes per designer when the cohort is full. Run against the rubric in the sprint's `07-critique-guide.md`. The critique lead files the log straight after.
 
 **Gate.** Address critique feedback, merge, run the gate on anything you are calling done.
 
 **Cohort day (Day 6), about 3 hours.** System work, one designer's "why session", a teardown, and the week's lab if it has one. One teardown is discussed. No new sprint work happens in this session.
 
-
 ---
 
 ## 4. Two rotating roles
 
-Five designers. Two roles rotate every week, so across a 4-week sprint everyone holds each role at least once.
+At most 10 designers, codes UX1 to UX10. Two roles rotate every week. Across the program, everyone holds each role at least once. The admin tracks it.
 
 | Role | Who | Duty |
 |---|---|---|
 | **Critique lead** | 1 person, weekly | Runs the week's critique against the rubric. Reviews every peer pull request. Files the critique log. |
 | **System owner** | 1 person, weekly | Owns `system/` that week. Merges component contributions, keeps tokens and docs current, writes the changelog. |
-| **Builder** | The other 3 | Sprint tasks plus one contribution to `system/` or `delivery/` |
+| **Builder** | Everyone else | Sprint tasks plus one contribution to `system/`; send proposed delivery changes to the team leader |
 
 The rotation is logged by the admin in `system/docs/rotation-log.md`.
 
-**Why these two roles exist.** Critique lead teaches you to name the user cost of a flaw instead of saying you do not like it, which is exactly what a design interview tests. System owner teaches you contribution governance and how to say no to a component, which is what design systems teams hire for.
+**Why these two roles exist.** Critique lead teaches you to name the user cost of a flaw instead of saying you do not like it, which is exactly what a design interview tests. System owner teaches you the rules for reviewing and accepting changes to shared components, and how to say no to a component, which is what design systems teams hire for.
 
 Neither role is a promotion. Neither role gets to overrule anyone.
 
 ---
 
-## 5. The four tracks
+## 5. The tracks and task IDs
 
 Every task has a letter. The letter tells you which muscle it trains.
 
@@ -117,10 +124,15 @@ Every task has a letter. The letter tells you which muscle it trains.
 | **F** | Fundamentals | The learning spine: why sessions, teardowns, explainers, drills |
 | **X** | Injected failure | The thing that goes wrong mid-sprint |
 | **E, I, T, G, A, K, B** | Sprint-specific | Ethics (Sprint 3), Interaction (3), Tokens (4), Governance (4), Adoption (4), the self-directed capstone (5), and Business of getting hired (6) |
-| **L-AI, L-PR** | Labs | AI in design and prototyping/responsive labs, one per sprint week listed in the learning path |
+| **L-AI, L-PR** | Labs | AI in design (L-AI1 to L-AI7) and prototyping/responsive labs (L-PR1 to L-PR4), one per sprint week listed in the learning path |
 | **JR** | Job readiness | Portfolio and mock-interview work running alongside every sprint |
 
-Task IDs look like `C1.1`, `R2.3`, `S4.2`. The number after the letter is the week-station, the number after the dot is the task within it.
+New task groups in this version:
+- Week 0 uses `Z0.1` to `Z0.8` for setup.
+- Week 12b uses `Y1.1` to `Y1.7` for the AI-assisted coded prototype, lab `L-AI6`.
+- Week 20b uses `A5.1` to `A5.7` for the Agent UX lab, lab `L-AI7`.
+
+Task IDs look like `C1.1`, `R2.3`, `S4.2`. The number after the letter is the week-station, the number after the dot is the task within it. New IDs include `Z0.1`, `Y1.1` and `A5.1`.
 
 The core tracks run in every sprint so no skill goes cold. Sprints differ by which track carries the most weight.
 
@@ -130,27 +142,27 @@ The core tracks run in every sprint so no skill goes cold. Sprints differ by whi
 
 A gate is a checklist, not an opinion. Work that fails a gate is not done, no matter how it looks.
 
-### Gate 1 — States
+### Gate 1: States
 
 Every flow must show: default, empty, loading, partial, error, success, offline, permission denied, zero results, first run, and destructive confirm where it applies.
 
 A missing state is a missing design, not a detail.
 
-### Gate 2 — Accessibility
+### Gate 2: Accessibility
 
 Run on the primary flow of everything you ship. Full checklist in each sprint's `06-accessibility-gate.md`. The short version:
 
 - Complete the task with keyboard only, no mouse
 - Visible focus on every interactive element
 - Contrast 4.5:1 for body text, 3:1 for large text and UI components
-- Target size at least 24 × 24 px
+- Target size at least 24 x 24 px
 - Every icon button has an accessible name
 - Errors say what happened and what to do, and name the field
 - Screen reader pass on the primary flow
 - Reduced motion alternative for anything over 200ms
 - Colour is never the only thing carrying meaning
 
-### Gate 3 — Evidence
+### Gate 3: Evidence
 
 Any claim about users needs a source. Valid sources:
 
@@ -171,12 +183,12 @@ Learning summary committed. Task committed.
 ### Every week
 Critique log filed. Two peer reviews given, each with at least one substantive comment. The week-close artefact committed.
 
-### Week 3 of each sprint — Whiteboard why
+### Week 3 of each sprint: Whiteboard why
 15 minutes. No notes, no files open. Draw your current flow from memory and answer three questions pulled at random from the sprint question bank.
 
 "Needs work" is a normal result and just schedules a re-run in week 4.
 
-### Week 4 of each sprint — The defense
+### Week 4 of each sprint: The defense
 The length grows with the program: 55 minutes (Sprints 1 and 2), 60 (Sprints 3 and 4), 75 (Sprint 5), 90 in Sprint 6, run as an interview. Sprint 1 and 2 use six parts:
 
 | Part | Time | What is being tested |
@@ -198,7 +210,7 @@ Constraint cards used in the last part: no colour · screen reader only · 2G ne
 
 The fourth is deliberate. A designer who cannot say that is guessing and hiding it.
 
-### Across the program — your ledger
+### Across the program: your ledger
 The admin keeps a running record per designer: concepts owned, teardowns written, tests run, components shipped, gates cleared, defenses passed, roles held. By Sprint 6 that record is your portfolio narrative and your interview story bank.
 
 ---
@@ -211,8 +223,18 @@ Each sprint folder has four zones.
 |---|---|---|
 | `students/UX{n}/` | Your own practice. Mistakes cost nothing. | Peer review |
 | `system/` | The one shared design system. Everyone depends on it. | Strict. System owner plus admin. |
-| `delivery/` | Shared final outputs for the client. | Strict. |
-| `fundamentals/` | Learning summaries, why sessions, teardowns, explainers. | Filed, spot checked |
+| `delivery/` | Shared final outputs for the client. Only the team leader updates it. | Strict. |
+| `fundamentals/` | Why sessions, teardowns, explainers, drills. | Filed, spot checked |
+
+Learning summaries live in `students/UX{n}/weekX/`, not in `fundamentals/`.
+
+Week 0 work lives in `Design-Sprint-1/students/UX{n}/week0/`.
+
+Full rules for the team repo and `delivery/` are in `11-Team-Repo-And-Delivery.md`.
+
+No real names, faces, phone numbers or IDs anywhere in the repo. Participants are P1, P2.
+
+You may commit markdown, PNG or JPG under 2 MB, PDF under 10 MB, and a view-only Figma link inside a markdown file. Small .html, .css and .js files and task code folders are also allowed for code corners. Image filenames must use lowercase letters and hyphens, with no spaces, for example `r1-1-home-page.png`. View-only Penpot links inside markdown are also allowed. Do not commit .fig files, passwords, tokens or real personal data.
 
 ### Figma and git together
 
@@ -220,17 +242,29 @@ Figma cannot be diffed, so git holds the reasoning and Figma holds the canvas.
 
 | Thing | Source of truth |
 |---|---|
-| Screens and components | Figma. Commit the link plus an exported PNG of the final state. |
+| Screens and components | Figma or Penpot. Commit the link plus an exported PNG of the final state. |
 | Tokens | Git. `system/tokens/*.tokens.json` (Design Tokens format 2025.10, see `09-Modern-Practice-Map.md`) |
 | Flows and diagrams | Git. Mermaid inside Markdown. |
 | Decisions and rationale | Git. Markdown, always. |
-| Specs and annotations | Git, Markdown, next to the Figma link |
+| Specs and annotations | Git, Markdown, next to the Figma or Penpot link |
 
-File naming in Figma: `SPRINT-1 Practice UX3`, `SPRINT-1 System`, `SPRINT-1 Delivery`.
+Figma Starter has limits: one team, one folder, 3 files, 30-day version history, no libraries, no Dev Mode, 150 AI credits per day up to 500 per month. For Figma AI, check the free limit before use. Check the plan page before you rely on a feature: https://help.figma.com/hc/en-us/articles/360040328273-Figma-plans-and-features.
+
+So use one Figma file per sprint. Name it `SPRINT-N UX{n}`. Use one page per week. Do not make a Practice file, a System file and a Delivery file. Keep 1 spare file. The 3-file limit means you cannot keep every sprint open in Figma at the same time. When a sprint closes, export the final pages as PNG or PDF into git. If you need to keep editing a closed file and the limit blocks you, move it to Penpot.
+
+Penpot is the backup. It is free and open source, in the browser. Check its free plan before use: https://penpot.app/pricing. The app is at https://penpot.app/.
+
+The shared system lives in one team library file only if the admin or the Education plan allows libraries. If not, it lives in tokens in `system/` as markdown or JSON. Teams without libraries share a view-only link and exported tokens.
+
+Figma Education plan may lift limits for eligible students in a structured class. Ask the admin. Do not assume. https://www.figma.com/education/
+
+File naming in Figma: `SPRINT-1 UX3`. One page per week.
 
 ---
 
 ## 9. The git loop
+
+Set your Git commit email to your GitHub no-reply address. For pushes, use browser sign-in or GitHub Desktop; GitHub does not accept your account password.
 
 ```bash
 git checkout main
@@ -242,13 +276,13 @@ git checkout -b UX3-C1-1           # one branch per task
 # ... do the work ...
 
 git add Design-Sprint-1/students/UX3/week1/C1-1-type-scale.md
-git commit -m "C1.1 type scale with Devanagari test"
+git commit -m "C1.1 type scale with Malayalam test"
 git push origin UX3-C1-1
 
 # open a pull request against upstream main
 ```
 
-One task, one file, one commit, message starting with the task ID.
+One task, one commit containing all files listed for that task; start the message with the task ID. Full walkthrough in `10-GitHub-For-Designers.md`.
 
 ---
 
@@ -258,43 +292,47 @@ One task, one file, one commit, message starting with the task ID.
 |---|---|
 | You open no pull request for a week | Admin messages you before the week closes. The question is what is blocking you, not why you are behind. |
 | Critique becomes personal taste | Session stops, the rubric is read out loud, critique restarts. Every comment names a principle and a user cost. |
-| The shared system is blocked | Admin pairs with the system owner straight away. A blocked system blocks five people. |
+| The shared system is blocked | Admin pairs with the system owner straight away. A blocked system blocks the cohort. |
 | The cohort splits on a shared decision | New work stops. One session to decide. Decision recorded. Everyone released together. |
 | Everyone designs the same thing | Each designer gets a different constraint card for one round. Convergence in week 2 usually means nobody explored. |
 | You want to skip the accessibility gate to ship prettier work | The gate does not move. You run a screen reader over your own flow once and the argument ends. |
 | Research recruiting fails | That is sprint content, not an accident. Switch method, reduce n, and state the limitation in writing. |
+| Figma says you reached the 3-file limit | Export a closed sprint as PNG or PDF into git. Move the file to Penpot if you need to keep editing it. Do not delete the only copy of your work. |
 
 ---
 
-## 11. Buffer weeks
+## 11. Catch-up and re-runs
 
-Two weeks sit outside the 24: one after Sprint 3, one after Sprint 6. They exist for catch-up and for defense re-runs. Using one is normal.
+The 27-week plan has no separate buffer weeks. Week 12b and week 20b are lab weeks, not buffers. If you fall behind, use the cut order at the end of the week file, ask for help in Discord early, and ask the admin to schedule a re-run. Using a re-run is normal.
 
 ---
 
 ## 12. What must be true before a sprint is called done
 
 - The sprint's lab or job-readiness task is done, with the external input it needs
-
 - Every designer cleared the accessibility gate on their primary flow
 - Every claim traces to a source
 - The shared system builds and its documentation matches what is in it
-- Every designer held one rotating role
+- The admin recorded this sprint's role rotation; every designer holds each role at least once across the program
 - Every designer passed the defense or has a scheduled re-run
 - One post mortem per designer is committed
 - Every learning summary for the sprint is committed
+- Every code corner in the sprint is committed, when the week has one
+- Every designer followed the Figma file rule: one file per sprint, `SPRINT-N UX{n}`, one page per week, or used Penpot when the 3-file limit blocked them
 
 ---
 
 ## 13. The honest time budget, and the labs
 
-A normal week is 18 to 22 hours. Fourteen of the 24 weeks add a lab on Day 6, worth 1.5 to 3 hours.
+A normal week is 18 to 22 hours. Sixteen of the 27 weeks have a lab. Fourteen add a lab on Day 6, worth 1.5 to 3 hours. Weeks 12b and 20b are full lab weeks.
 
 | Family | IDs | Weeks | Document |
 |---|---|---|---|
-| AI in design | L-AI1 to L-AI5 | 2, 6, 9, 14, 17 | `07-AI-In-Design.md` |
+| AI in design | L-AI1 to L-AI7 | 2, 6, 9, 12b, 14, 17, 20b | `07-AI-In-Design.md` |
 | Prototyping and responsive | L-PR1 to L-PR4 | 3, 10, 13, 18 | `08-Prototyping-And-Responsive.md` |
 | Job readiness | JR1 to JR5 | 4, 8, 12, 16, 20 | `06-Job-Readiness-Track.md` |
+
+Code corners are 20 to 40 minute HTML, CSS and Git pieces in weeks 0, 3, 6, 10, 12b, 15 and 22. They are part of the week, not extra. See `12-HTML-CSS-For-Designers.md`. The setup guide is `04-Tools-Setup.md`. The AI handbook is `07-AI-In-Design.md`.
 
 Labs exist because the junior market asks for the skills they train: working with AI honestly, building prototypes that behave, and having a portfolio and interview rehearsal long before you need them. If a week is running over, cut in the order stated at the end of the week file. **Never cut a gate, a lab's external input, or the learning summaries.**
 
