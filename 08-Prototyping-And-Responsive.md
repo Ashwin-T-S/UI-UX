@@ -62,7 +62,7 @@ This file adds four labs that make both explicit. They sit on the week's Day 6 (
 
 **Method**
 1. Take one component you contributed to the system (a text input or a button works).
-2. Stress it four ways and screenshot each: browser zoom at 200%, a label three times longer than expected, the Devanagari and one other script you can read or find sample strings for, and the longest word in the cohort's content.
+2. Stress it four ways and screenshot each: browser zoom at 200%, a label three times longer than expected, Malayalam and one other script you can read or find sample strings for, and the longest word in the cohort's content.
 3. List what broke. Fix the component and its documentation so the behaviour is specified: wrap, truncate, grow, or reflow.
 4. Add a "stress states" section to the component's file in `system/components/`.
 
